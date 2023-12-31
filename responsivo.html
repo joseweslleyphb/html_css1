@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsivo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .container {
+            width: 100%;
+            padding: 0 15;
+            margin: 0 auto;
+        }
+        img {width: 100%;}
+        body {
+            background-color: yellow;
+        }
+        .breakpoint::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        @media screen and (min-width: 768px) {
+            body {
+                background-color: green;
+            }
+            .container {width: 720px;}
+            .breakpoint-img {
+                float: left;
+                width: 33.33%;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            body {
+            background-color: rebeccapurple;
+            }
+            .container {width: 1140px;}
+            .breakpoint-img {
+                float: left;
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Designer Responsivo</h1>
+        <p>
+            Designer responsivo é uma técnica de estruturação HTML e CSS que consiste em site ao browser do usuário,ou seja, é um tipo de design onde o layout fica variante de acordo com a resolução do usuário. 
+        </p>
+        <p>
+            Esse tipo de design responsivo teve origem em 2010 com o objetivo de melhor experiência de navegação dos usuários de página web.
+        </p>
+        <h2>Breakpoints (Bootstrap)</h2>
+        <div class="breakpoint">
+            <div class="breakpoint-img">
+                <figure>
+                    <img src="img2/cel-01.png" alt="">
+                </figure>
+            </div>
+            <div class="breakpoint-img">
+                <figure>
+                    <img src="img2/cel-02.jpg" alt="">
+                </figure>
+            </div>
+            <div class="breakpoint-img">
+                <figure>
+                    <img src="img2/table-03.jpg" alt="">
+                </figure>
+            </div>
+            <div class="breakpoint-img">
+                <figure>
+                    <img src="img2/note-04.png" alt="">
+                </figure>
+            </div>
+            <div class="breakpoint-img">
+                <figure>
+                    <img src="img2/tv-05.png" alt="">
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: #333;
+        }
+        a:link, a:visited, a:active {
+            color: #333;
+            text-decoration: none;
+        }
+        body {
+            background-image: url("img/background.avif");
+            background-attachment: fixed;
+        }
+        #main-header {
+            background-color: #fff;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        main {
+            margin-top: 130px;
+        }
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .post {
+            background-color: #fff;
+            border-radius: 15px;
+            text-align: justify;
+            margin-bottom: 30px;
+            box-shadow: 0 0 15px;
+        }
+        .post-image img {
+            border-radius: 15px 15px 0 0;
+            width: 100%;
+        }
+        .post-content h2 {
+            text-align: center;
+            margin: 20px;
+        }
+        .post-content p {
+            line-height: 1.5em;
+            padding: 20px;
+        }
+        .post-button {
+            margin: 40px;
+            text-align: center;
+        }
+        .post-button a {
+            border: 1px solid orange;
+            padding: 10px 30px;
+            transition: all 0,5s;
+        }
+        .post-button a:hover {
+            background-color: orange;
+            color: white;
+        }
+        .post-footer {
+            border-top: 1px solid #ddd;
+            font-style: italic;
+            margin: 0 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1><img src="img/logo.png" width="10%"></h1>
+    </header>
+    <main>
+        <div class="container">
+            <article class="post">
+                <div class="post-image">
+                    <figure>
+                        <img src="img/post-1.webp" width="70%">
+                    </figure>
+                </div>
+                <div class="post-content">
+                    <h2>lorem ipsum dolor sit amet consectetur</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique a! Asperiores dolore vitae, amet, accusantium assumenda optio alias perspiciatis in nihil necessitatibus impedit? Eligendi est sed optio consequuntur enim?
+                    </p>
+                </div>
+                <div class="post-button">
+                    <a href="#">Leia mais</a>
+                </div>
+                <div class="post-footer">
+                    Postado po: User em Dezembro/2023
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-image">
+                    <figure>
+                        <img src="img/post-2.jpg" width="70%">
+                    </figure>
+                </div>
+                <div class="post-content">
+                    <h2>lorem ipsum dolor sit amet consectetur</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, similique a! Asperiores dolore vitae, amet, accusantium assumenda optio alias perspiciatis in nihil necessitatibus impedit? Eligendi est sed optio consequuntur enim?
+                    </p>
+                </div>
+                <div class="post-button">
+                    <a href="#">Leia mais</a>
+                </div>
+                <div class="post-footer">
+                    Postado po: User em Dezembro/2023
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
